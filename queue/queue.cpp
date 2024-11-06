@@ -13,3 +13,9 @@ Queue<T>::Queue(T data,Node<T>* node){
     head = newNode;
     tail = head;
 }
+
+template<class T>
+Queue<T>::~Queue(){
+    this->head = nullptr;
+    this->tail = nullptr;
+}
