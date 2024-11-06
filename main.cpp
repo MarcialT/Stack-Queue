@@ -1,30 +1,7 @@
 #include<iostream>
+#include"./queue/queue.cpp"
 using namespace std;
-
-template<class T>
-class Queue{
-    private:
-    Node<T>* head = nullptr;
-    Node<T>* tail = nullptr;
-    public:
-    Queue(T,Node<T>*);
-    ~Queue();
-    void print();
-    bool isEmpty();
-    int getLength();
-};
 
 int main(){
 
-}
-
-template<class T>
-bool Queue<T>::isEmpty(){
-return this->head==nullptr;
-}
-
-template<class T>
-void Queue<T>::print(){
-    cout<<"la cola es: "<<this->tail<<endl;
-    cout<<"La cabeza es: "<<this->head<<endl;
 }
