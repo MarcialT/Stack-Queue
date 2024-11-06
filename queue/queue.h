@@ -1,3 +1,4 @@
+#include"./node/node.cpp"
 template<class T>
 class Queue{
     private:
@@ -6,6 +7,8 @@ class Queue{
     public:
     Queue(T,Node<T>*);
     ~Queue();
+    void push(T);
+    T pop();
     void print();
     bool isEmpty();
     int getLength();

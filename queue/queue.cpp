@@ -8,7 +8,8 @@ return this->head==nullptr;
 }
 
 template<class T>
-void Queue<T>::print(){
-    cout<<"la cola es: "<<this->tail<<endl;
-    cout<<"La cabeza es: "<<this->head<<endl;
+Queue<T>::Queue(T data,Node<T>* node){
+    Node<T> *newNode = new Node<T>(data,node);
+    head = newNode;
+    tail = head;
 }
