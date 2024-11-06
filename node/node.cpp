@@ -18,3 +18,7 @@ T Node<T>::getData(){
     return this->data;
 }
 
+template<class T>
+void Node<T>::setData(T data){
+    this->data = data;
+}
