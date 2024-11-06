@@ -22,3 +22,8 @@ template<class T>
 void Node<T>::setData(T data){
     this->data = data;
 }
+
+template<class T>
+Node<T>* Node<T>::getNext(){
+    return this->next;
+}
