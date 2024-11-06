@@ -2,18 +2,6 @@
 using namespace std;
 
 template<class T>
-class Node{
-    private:
-    T data;
-    Node<T>* next = nullptr;
-    public:
-    T getData();
-    void setData(T);
-    Node<T>* getNext();
-    void setNext(Node<T>*);
-};
-
-template<class T>
 class Queue{
     private:
     Node<T>* head = nullptr;
