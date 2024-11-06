@@ -32,3 +32,9 @@ class Queue{
 int main(){
 
 }
+
+template<class T>
+bool Queue<T>::isEmpty(){
+return this->head==nullptr;
+}
+
