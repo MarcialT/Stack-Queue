@@ -6,14 +6,11 @@ class Node{
     private:
     T data;
     Node<T>* next = nullptr;
-    Node<T>* prev = nullptr;
     public:
     T getData();
     void setData(T);
     Node<T>* getNext();
     void setNext(Node<T>*);
-    Node<T>* getPrev();
-    void setPrev(Node<T>*);
 };
 
 template<class T>
@@ -38,3 +35,8 @@ bool Queue<T>::isEmpty(){
 return this->head==nullptr;
 }
 
+template<class T>
+void Queue<T>::print(){
+    cout<<"la cola es: "<<this->tail<<endl;
+    cout<<"La cabeza es: "<<this->head<<endl;
+}
