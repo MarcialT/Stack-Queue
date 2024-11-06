@@ -12,3 +12,9 @@ template<class T>
 Node<T>::~Node(){
     this->next = nullptr;
 }
+
+template<class T>
+T Node<T>::getData(){
+    return this->data;
+}
+
