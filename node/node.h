@@ -1,3 +1,6 @@
+#ifndef NODE_H
+#define NODE_H
+
 template<class T>
 class Node{
     private:
@@ -11,3 +14,4 @@ class Node{
     Node<T>* getNext();
     void setNext(Node<T>*);
 };
+#endif

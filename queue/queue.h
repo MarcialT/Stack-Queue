@@ -1,4 +1,6 @@
-#include"./node/node.cpp"
+#ifndef QUEUE_H
+#define QUEUE_H
+#include"../node/node.h"
 template<class T>
 class Queue{
     private:
@@ -12,3 +14,4 @@ class Queue{
     void print();
     bool isEmpty();
 };
+#endif
