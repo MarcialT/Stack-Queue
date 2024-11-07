@@ -11,5 +11,4 @@ class Queue{
     T pop();
     void print();
     bool isEmpty();
-    int getLength();
 };

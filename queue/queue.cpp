@@ -31,3 +31,16 @@ void Queue<T>::push(T data){
     this->tail->setNext(node);
     this->tail = node;
 }
+
+template<class T>
+T Queue<T>::pop(){
+    T data;
+    if(isEmpty()){
+        return data;
+    }
+    Node<T> *temp = head;
+    head = head->getNext();
+
+    delete temp;
+    return data;
+}
