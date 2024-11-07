@@ -44,3 +44,10 @@ T Queue<T>::pop(){
     delete temp;
     return data;
 }
+
+template<class T>
+void Queue<T>::print(){
+    while(!isEmpty()){
+        cout<<pop()<<endl;
+    }
+}
