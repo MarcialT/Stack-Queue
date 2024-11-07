@@ -1,5 +1,5 @@
 #include<iostream>
-#include"queue.h"
+#include"./queue.h"
 using namespace std;
 
 template<class T>
@@ -26,7 +26,7 @@ void Queue<T>::push(T data){
     if(isEmpty()){
         head = node;
         tail = node;
-        return
+        return;
     }
     this->tail->setNext(node);
     this->tail = node;
@@ -34,13 +34,12 @@ void Queue<T>::push(T data){
 
 template<class T>
 T Queue<T>::pop(){
-    T data;
     if(isEmpty()){
-        return data;
+         throw std::out_of_range("Queue is empty");
     }
     Node<T> *temp = head;
+    T data = temp->getData();
     head = head->getNext();
-
     delete temp;
     return data;
 }

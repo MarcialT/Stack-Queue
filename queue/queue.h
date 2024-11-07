@@ -1,6 +1,6 @@
 #ifndef QUEUE_H
 #define QUEUE_H
-#include"../node/node.h"
+#include"../node/node.cpp"
 template<class T>
 class Queue{
     private:
