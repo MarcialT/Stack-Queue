@@ -20,5 +20,6 @@ Stack<T>::~Stack(){
 
 template<class T>
 void Stack<T>::push(T data){
-    
+    Node<T> *newNode = new Node<T>(data, head);
+    head = newNode;
 }
