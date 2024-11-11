@@ -43,13 +43,8 @@ void Stack<T>::print(){
 
 template<class T>
 void Stack<T>::revert(){
-        if(isEmpty()){
-                return;
-        }else{
-                Node<T> *node = head;
-                tail = head;
-                head = node->getNext();
-                delete node;
-        }
-
+        Node<T> *node = head;
+        tail = head;
+        head = node->getPrev();
+        delete node;
 }
