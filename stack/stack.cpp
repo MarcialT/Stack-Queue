@@ -33,3 +33,10 @@ T Stack<T>::pop(){
     delete Temp;
     return data;
 }
+
+template<class T>
+void Stack<T>::print(){
+    while(!isEmpty()){
+    cout<<pop()<<endl;
+}
+}
