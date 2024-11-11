@@ -23,3 +23,13 @@ void Stack<T>::push(T data){
     Node<T> *newNode = new Node<T>(data, head);
     head = newNode;
 }
+
+template <class T>
+T Stack<T>::pop(){
+    T data;
+    Node<T> *Temp = head;
+    head = head->getNext();
+    data = Temp->getData();
+    delete Temp;
+    return data;
+}
