@@ -6,6 +6,7 @@ template<class T>
 class Stack{
     private:
     Node<T>* head = nullptr;
+    Node<T>* tail = nullptr;
     public:
     Stack(T,Node<T>*);
     ~Stack();
@@ -13,6 +14,7 @@ class Stack{
     T pop();
     bool isEmpty();
     void print();
+    void revert();
 };
 
 #endif

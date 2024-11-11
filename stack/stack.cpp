@@ -40,3 +40,16 @@ void Stack<T>::print(){
     cout<<pop()<<endl;
 }
 }
+
+template<class T>
+void Stack<T>::revert(){
+        if(isEmpty()){
+                return;
+        }else{
+                Node<T> *node = head;
+                tail = head;
+                head = node->getNext();
+                delete node;
+        }
+
+}
