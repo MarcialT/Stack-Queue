@@ -10,3 +10,8 @@ Process A first, then B, then C and D
 
 3. Create a template for a priority queue using simple linked lists, instead of 
 arrangements as in practice.
+
+Commands for excecute:
+
+1. g++ main.cpp -o ./build/main.exe
+2. ./build/main.exe
