@@ -32,13 +32,3 @@ template<class T>
 void Node<T>::setNext(Node<T>* next){
     this->next = next;
 }
-
-template<class T>
-Node<T>* Node<T>::getPrev(){
-    return this->prev;
-}
-
-template<class T>
-void Node<T>::setPrev(Node<T>* prev){
-    this->prev = prev;
-}
