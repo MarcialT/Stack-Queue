@@ -8,12 +8,14 @@ class Stack{
     Node<T>* head = nullptr;
     public:
     Stack(T,Node<T>*);
+    Stack();
     ~Stack();
     void push(T);
     T pop();
     bool isEmpty();
     void print();
     void revert();
+    void printStack();
 };
 
 #endif
