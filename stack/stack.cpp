@@ -30,8 +30,8 @@ T Stack<T>::pop(){
     Node<T> *Temp = head;
     head = head->getNext();
     data = Temp->getData();
-    delete Temp;
     return data;
+    delete Temp;
 }
 
 template<class T>
@@ -42,8 +42,30 @@ void Stack<T>::print(){
 }
 
 template<class T>
+void Stack<T>::printStack(){
+    Node<T>* Temp = head;
+    while(Temp!= nullptr){
+        cout<<Temp->getData()<<" "<<endl;
+        Temp = Temp->getNext();
+    }
+}
+template<class T>
+Stack<T>::Stack(){
+
+}
+template<class T>
 void Stack<T>::revert(){
-    Stack<T> stackTemp;
-    stackTemp.push(pop());
-    head = stackTemp.head;
+    Stack<T> Temp1;
+    Stack<T> Temp2;
+    while(!isEmpty()){
+        Temp1.push(pop());
+    }
+    while (!Temp1.isEmpty())
+    {
+        Temp2.push(Temp1.pop());
+    }
+    while(!Temp2.isEmpty()){
+        push(Temp2.pop());
+    }
+    printStack();
 }
