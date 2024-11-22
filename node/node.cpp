@@ -9,6 +9,13 @@ Node<T>::Node(T data,Node<T>* next){
 }
 
 template<class T>
+Node<T>::Node(T data, Node<T>* next,int priority){
+    this->data = data;
+    this->next = next;
+    this->priority = priority;
+}
+
+template<class T>
 Node<T>::~Node(){
     this->next = nullptr;
 }
@@ -31,4 +38,14 @@ Node<T>* Node<T>::getNext(){
 template<class T>
 void Node<T>::setNext(Node<T>* next){
     this->next = next;
+}
+
+template<class T>
+int Node<T>::getpriority(){
+    return this->priority;
+}
+
+template<class T>
+void Node<T>::setpriority(int priority){
+    this->priority = priority;
 }

@@ -8,11 +8,14 @@ class Node{
     Node<T>* next = nullptr;
     int priority;
     public:
-    Node(T,Node<T>*);
+    Node(T data,Node<T>* next);
+    Node(T data,Node<T>* next, int priority);
     ~Node();
     T getData();
     void setData(T);
     Node<T>* getNext();
     void setNext(Node<T>*);
+    int getpriority();
+    void setpriority(int);
 };
 #endif
