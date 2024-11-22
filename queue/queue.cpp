@@ -35,7 +35,8 @@ void Queue<T>::push(T data){
 template<class T>
 T Queue<T>::pop(){
     if(isEmpty()){
-         throw std::out_of_range("Queue is empty");
+        cout<<"Queue is empty"<<endl;
+        return;
     }
     Node<T> *temp = head;
     T data = temp->getData();
