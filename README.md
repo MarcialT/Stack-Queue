@@ -11,7 +11,8 @@ Process A first, then B, then C and D
 3. Create a template for a priority queue using simple linked lists, instead of 
 arrangements as in practice.
 
-Commands for excecute:
+Steps for use the code:
 
-1. g++ main.cpp -o ./build/main.exe
-2. ./build/main.exe
+1. First copy and paste this command in the terminal for compile "g++ main.cpp -o ./build/main.exe".
+2. Second copy and paste this command in the terminal for run "./build/main.exe".
+3. The terminal show the original stack inverted.
