@@ -1,4 +1,4 @@
-#WELCOME-TO-THE-QUEUE-&-STACK-CODE
+# WELCOME TO THE QUEUE & STACK CODE
 
 1. Create a program that reverses the order of a stack by saving the data with the inverted order 
 within the same stack.
