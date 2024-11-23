@@ -1,5 +1,6 @@
 #ifndef QUEUE_H
 #define QUEUE_H
+#pragma once
 #include"../node/node.cpp"
 template<class T>
 class Queue{
