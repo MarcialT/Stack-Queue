@@ -1,5 +1,6 @@
 #include<iostream>
 #include"./node.h"
+#pragma once
 using namespace std;
 
 template<class T>
@@ -41,11 +42,11 @@ void Node<T>::setNext(Node<T>* next){
 }
 
 template<class T>
-int Node<T>::getpriority(){
+int Node<T>::getPriority(){
     return this->priority;
 }
 
 template<class T>
-void Node<T>::setpriority(int priority){
+void Node<T>::setPriority(int priority){
     this->priority = priority;
 }
