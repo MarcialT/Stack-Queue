@@ -1,5 +1,6 @@
 #include<iostream>
 #include"./queue.h"
+#pragma once
 using namespace std;
 
 template<class T>
