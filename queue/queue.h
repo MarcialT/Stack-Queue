@@ -8,10 +8,13 @@ class Queue{
     Node<T>* tail = nullptr;
     public:
     Queue(T,Node<T>*);
+    Queue();
     ~Queue();
     void push(T);
     T pop();
     void print();
     bool isEmpty();
+    void processByPriority();
+    Node<T>* getHead();
 };
 #endif
