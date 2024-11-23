@@ -15,6 +15,11 @@ Queue<T>::Queue(T data,Node<T>* node){
 }
 
 template<class T>
+Queue<T>::Queue(){
+
+}
+
+template<class T>
 Queue<T>::~Queue(){
     this->head = nullptr;
     this->tail = nullptr;
@@ -51,3 +56,41 @@ void Queue<T>::print(){
         cout<<pop()<<endl;
     }
 }
+
+
+template<class T>
+void Queue<T>::processByPriority(){
+    while(!isEmpty()){
+            Node<T>* highestPriorityNode = head;
+            Node<T>* Temp = head;
+            Node<T>* previous = nullptr;
+            Node<T>* previousHighest = nullptr;
+
+            while (Temp != nullptr) {
+                if (Temp->getPriority() > highestPriorityNode->getPriority()) {
+                    highestPriorityNode = Temp;
+                    previousHighest = previous;
+                }
+                previous = Temp;
+                Temp = Temp->getNext();
+            }
+
+            if (previousHighest != nullptr) {
+                previousHighest->setNext(highestPriorityNode->getNext());
+            } else {
+                head = highestPriorityNode->getNext();
+            }
+
+            if (highestPriorityNode == tail) {
+                tail = previousHighest;
+            }
+
+            cout << "Dato procesado: " << highestPriorityNode->getData() << " con prioridad de " << highestPriorityNode->getPriority() << endl;
+            delete highestPriorityNode;
+        }
+    }
+
+    template<class T>
+ Node<T>* Queue<T>:: getHead() {
+        return head;
+    }
