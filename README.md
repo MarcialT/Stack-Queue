@@ -4,7 +4,7 @@ This code is a simple university project of data dynamic structs.
 
 ## Code Description
 
-this code shows a previously inverted entered stack, numbers processed by priority.
+this code shows a previously inverted entered stack and numbers processed by priority.
 
 ## Getting Started
 
