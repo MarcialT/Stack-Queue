@@ -1,4 +1,4 @@
-# WELCOME TO THE QUEUE & STACK CODE
+# WELCOME TO THE STACK & QUEUE CODE
 
 This code is a simple university project of data dynamic structs.
 
